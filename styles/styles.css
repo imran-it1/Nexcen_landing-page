@@ -302,3 +302,7 @@ body {
     color: var(--color-secondary);
     font-style: 2.5rem;
 }
+
+.exp_continer {
+    flex-direction: row-reverse;
+}
