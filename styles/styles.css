@@ -12,6 +12,7 @@
 
     --color-white: #fff;
     --color-gray: #f1f1f1;
+    --color-text-gray: #4D4D4D;
 }
 
 html {
@@ -138,4 +139,69 @@ body {
     /* Tahole margin ke somman korbe and allow korbe amra jani inline element top and bottom er magin ney na, jehetu button ta <a> tag , thats mean inline element. Upore <p> tag a deya margin bottom se nibe na jotokhon na <a> take display inline block kora hobe */
     display: inline-block;
     letter-spacing: 1.2px;
+}
+
+/* Section */
+
+.section {
+    padding-top: 10rem;
+}
+
+.clients_container {
+    text-align: center;
+}
+
+.section_header {
+    margin-bottom: 2rem;
+}
+
+.section_title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.section_text {
+    font-style: 2rem;
+    color: var(--color-secondary);
+    font-weight: 400;
+}
+
+.clients_wraper {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    justify-items: center;
+    gap: 1rem;
+}
+
+
+/* Service */
+
+.services_container {
+    text-align: center;
+}
+
+.services {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.service {
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.50);
+    padding: 2rem .5rem;
+}
+
+.service_title {
+    color: var(--color-text-gray);
+    font-size: 2.8rem;
+}
+
+.service_text {
+    font-size: 1.4rem;
+    color: var(--color-secondary);
 }
