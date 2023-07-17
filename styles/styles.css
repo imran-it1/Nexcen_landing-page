@@ -11,6 +11,7 @@
     --color-secondary: #263238;
 
     --color-white: #fff;
+    --color-gray: #f1f1f1;
 }
 
 html {
@@ -35,10 +36,10 @@ body {
     width: 100%;
     height: 8rem;
     background-color: var(--color-white);
-    background-color: lightcoral;
 }
 
 .nav_container {
+    /*Jodi container er width shared style a na ditam to ekhane bole ditam je 80vw*/
     /* container er 80vw pailo jeta container er width */
     width: 100%;
     /* Height 8rem jeta er parent nav theke asce karon containr er kono height amra set kori nai just width 80vw set kora hoyecilo*/
@@ -77,4 +78,64 @@ body {
     color: var(--color-white);
     padding: 1rem 2rem;
     border-radius: .5rem;
+    letter-spacing: 1.2px;
+}
+
+
+/* Hero Header */
+
+
+.banner {
+    width: 100%;
+    height: calc(100vh - 8rem);
+    background-color: var(--color-gray);
+}
+
+.header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_container_wraper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_text {
+    width: 65%;
+}
+
+.header_img {
+    width: 35%;
+}
+
+.header_title {
+    font-size: 7.5rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    line-height: 8rem;
+}
+
+.header_title>span {
+    color: var(--color-primary);
+}
+
+.header_description {
+    color: var(--color-secondary);
+    margin: 1rem 0rem;
+}
+
+.header_btn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1.2rem 2rem;
+    border-radius: .5rem;
+    /* Tahole margin ke somman korbe and allow korbe amra jani inline element top and bottom er magin ney na, jehetu button ta <a> tag , thats mean inline element. Upore <p> tag a deya margin bottom se nibe na jotokhon na <a> take display inline block kora hobe */
+    display: inline-block;
+    letter-spacing: 1.2px;
 }
