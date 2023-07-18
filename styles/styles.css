@@ -369,7 +369,8 @@ body {
 .blogs {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem;
 }
 
@@ -572,6 +573,13 @@ input::placeholder {
         height: 5rem;
     }
 
+    .experience_title,
+    .section_title,
+    .help_title {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+
     .experience_img {
         width: 100%;
     }
@@ -771,21 +779,20 @@ input::placeholder {
     }
 
     .test_img {
-        width: 100%;
+        width: 50%;
     }
 
     .test_content {
-        width: 100%;
+        width: 50%;
     }
-
 
     .test_logos {
         gap: 2rem;
+        flex-wrap: wrap;
     }
 
     .demo_title {
         font-size: 4.5rem;
         line-height: 6rem;
     }
-}
 }
