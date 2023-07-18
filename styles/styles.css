@@ -479,6 +479,10 @@ body {
     font-weight: 600;
 }
 
+.footer_social_link {
+    margin-right: 1.5rem;
+}
+
 .footer_item_name {
     color: var(--footer-text-color);
     margin-bottom: 1rem;
@@ -488,6 +492,10 @@ body {
 .footer_items {
     width: 100%;
     position: relative;
+}
+
+.footer_items a {
+    text-decoration: none;
 }
 
 .footer_email_input {
